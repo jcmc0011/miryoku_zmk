@@ -3,10 +3,11 @@
 
 
 #define MIRYOKU_LAYER_BASE \
-&kp Q,             &kp W,             &kp E,             &kp R,             &kp T,             &kp Y,             &kp U,             &kp I,             &kp O,             &kp P,             \
-U_MT(LSHFT, A),    U_MT(LGUI, S),     U_MT(LALT, D),     U_MT(LCTRL, F),    &kp G,             &kp H,             U_MT(LCTRL, J),    U_MT(LALT, K),     U_MT(LGUI, L),     U_MT(LSHFT, SEMI),   \
-U_LT(U_BUTTON, Z), U_MT(RALT, X),     &kp C,             &kp V,             &kp B,             &kp N,             &kp M,             &kp COMMA,         U_MT(RALT, DOT),   U_LT(U_BUTTON, SLASH),\
-U_NP,              U_NP,              U_LT(U_MEDIA, ESC),U_LT(U_NAV, SPACE),U_LT(U_MOUSE, TAB),U_LT(U_SYM, RET),  U_LT(U_NUM, BSPC), U_LT(U_FUN, DEL),  U_NP,              U_NP
+&kp ESC,        &kp N1,       &kp N2,       &kp N3,              &kp N4,             &kp N5,             &kp N6,           &kp N7,            &kp N8,           &kp N9,       &kp N0,         &kp MINUS,     \
+&kp TAB,        &kp Q,        &kp W,        &kp E,               &kp R,              &kp T,              &kp Y,            &kp U,             &kp I,            &kp O,        &kp P,          &kp GRA4V,     \
+&kp LSHIFT,     &kp A,        &kp S,        &kp D,               &kp F,              &kp G,              &kp H,            &kp J,             &kp K,            &kp L,        &kp SEMI,       &kp LSHFT,     \
+&kp LCTRL,      &kp Z,        &kp X,        &kp C,               &kp V,              &kp B,              &kp N,            &kp M,             &kp COMMA,        &kp DOT,      &kp SLASH,      &kp LCTRL,     \
+                U_NP,         U_NP,         U_LT(LGUI, ESC), U_LT(U_NAV, SPACE), U_LT(U_MEDIA, TAB), U_LT(U_SYM, RET), U_LT(U_NUM, SPACE), U_LT(U_FUN, DEL), U_NP,         U_NP
 
 #define MIRYOKU_LAYER_NUM \
 &kp LBKT,          &kp N7,            &kp N8,            &kp N9,            &kp RBKT,          U_NA,              &u_to_U_BASE,      &u_to_U_EXTRA,     &u_to_U_TAP,       U_BOOT,            \
