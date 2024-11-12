@@ -4,7 +4,7 @@
 
 #define MIRYOKU_LAYER_BASE \
 &kp ESC,        &kp N1,       &kp N2,       &kp N3,              &kp N4,             &kp N5,             &kp N6,           &kp N7,            &kp N8,           &kp N9,       &kp N0,         &kp MINUS,     \
-&kp TAB,        &kp Q,        &kp W,        &kp E,               &kp R,              &kp T,              &kp Y,            &kp U,             &kp I,            &kp O,        &kp P,          &kp GRA4V,     \
+&kp TAB,        &kp Q,        &kp W,        &kp E,               &kp R,              &kp T,              &kp Y,            &kp U,             &kp I,            &kp O,        &kp P,          &kp GRAVE,     \
 &kp LSHIFT,     &kp A,        &kp S,        &kp D,               &kp F,              &kp G,              &kp H,            &kp J,             &kp K,            &kp L,        &kp SEMI,       &kp LSHFT,     \
 &kp LCTRL,      &kp Z,        &kp X,        &kp C,               &kp V,              &kp B,              &kp N,            &kp M,             &kp COMMA,        &kp DOT,      &kp SLASH,      &kp LCTRL,     \
                 U_NP,         U_NP,         U_LT(LGUI, ESC), U_LT(U_NAV, SPACE), U_LT(U_MEDIA, TAB), U_LT(U_SYM, RET), U_LT(U_NUM, SPACE), U_LT(U_FUN, DEL), U_NP,         U_NP
