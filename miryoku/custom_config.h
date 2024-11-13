@@ -1,6 +1,25 @@
 // Copyright 2021 Manna Harbour
 // https://github.com/manna-harbour/miryoku
 
+#define MIRYOKU_LAYER_LIST \
+MIRYOKU_X(BASE,   "Base") \
+MIRYOKU_X(NAV,    "Nav") \
+MIRYOKU_X(MEDIA,  "Media") \
+MIRYOKU_X(NUM,    "Num") \
+MIRYOKU_X(SYM,    "Sym") \
+MIRYOKU_X(FUN,    "Fun")
+
+#define U_BASE   0
+#define U_EXTRA  1
+#define U_TAP    2
+#define U_BUTTON 3
+#define U_NAV    4
+#define U_MOUSE  5
+#define U_MEDIA  6
+#define U_NUM    7
+#define U_SYM    8
+#define U_FUN    9
+
 #define MIRYOKU_LAYOUTMAPPING_LILY58( \
   K00, K01, K02, K03, K04, K05,              K06, K07, K08, K09, K10, K11, \
   K12, K13, K14, K15, K16, K17,              K18, K19, K20, K21, K22, K23, \
@@ -20,20 +39,6 @@ K36  K37  N38  N39  K40  K41  XXX       XXX  K42  K43  K44  K45  K46  K47 \
 &kp LSHIFT,     &kp A,        &kp S,        &kp D,           &kp F,              &kp G,              &kp H,            &kp J,              &kp K,             &kp L,        &kp SEMI,      &kp LSHFT, \
 &kp LCTRL,      &kp Z,        &kp X,        &kp C,           &kp V,              &kp B,              &kp N,            &kp M,              &kp COMMA,         &kp DOT,      &kp SLASH,     &kp LCTRL, \
 U_NA,           U_NA,         U_NA,         U_LT(LGUI, ESC), U_LT(U_NAV, SPACE), U_LT(U_MEDIA, TAB), U_LT(U_SYM, RET), U_LT(U_NUM, SPACE), U_LT(U_FUN, DEL),  U_NA,         U_NA,          U_NA
-
-#define MIRYOKU_LAYER_EXTRA \
-&kp ESC,        &kp N1,       &kp N2,       &kp N3,          &kp N4,             &kp N5,             &kp N6,           &kp N7,             &kp N8,            &kp N9,       &kp N0,        &kp MINUS, \
-&kp TAB,        &kp Q,        &kp W,        &kp E,           &kp R,              &kp T,              &kp Y,            &kp U,              &kp I,             &kp O,        &kp P,         &kp GRAVE, \
-&kp LSHIFT,     &kp A,        &kp S,        &kp D,           &kp F,              &kp G,              &kp H,            &kp J,              &kp K,             &kp L,        &kp SEMI,      &kp LSHFT, \
-&kp LCTRL,      &kp Z,        &kp X,        &kp C,           &kp V,              &kp B,              &kp N,            &kp M,              &kp COMMA,         &kp DOT,      &kp SLASH,     &kp LCTRL, \
-U_NA,           U_NA,         U_NA,         U_LT(LGUI, ESC), U_LT(U_NAV, SPACE), U_LT(U_MEDIA, TAB), U_LT(U_SYM, RET), U_LT(U_NUM, SPACE), U_LT(U_FUN, DEL),  U_NA,         U_NA,          U_NA
-
-#define MIRYOKU_LAYER_TAP \
-U_NP,         U_NP,           U_NP,         U_NP,            U_NP,              U_NP,                U_NP,              U_NP,              U_NP,              U_NP,         U_NP,          U_NP, \
-U_NP,         &kp Q,          &kp W,        &kp E,           &kp R,             &kp T,               &kp Y,             &kp U,             &kp I,             &kp O,        &kp P,         U_NP, \
-U_NP,         &kp A,          &kp S,        &kp D,           &kp F,             &kp G,               &kp H,             &kp J,             &kp K,             &kp L,        &kp SQT,       U_NP, \
-U_NP,         &kp Z,          &kp X,        &kp C,           &kp V,             &kp B,               &kp N,             &kp M,             &kp COMMA,         &kp DOT,      &kp SLASH,     U_NP, \
-U_NA,         U_NA,           U_NA,         &kp ESC,         &kp SPACE,         &kp TAB,             &kp RET,           &kp BSPC,          &kp DEL,           U_NA,         U_NA,          U_NA
 
 #define MIRYOKU_LAYER_NAV \
 U_NP,         U_NP,           U_NP,         U_NP,            U_NP,              U_NP,                U_NP,              U_NP,              U_NP,              U_NP,         U_NP,          U_NP, \
@@ -69,17 +74,3 @@ U_NP,         &kp F12,        &kp F7,       &kp F8,          &kp F9,            
 U_NP,         &kp F11,        &kp F4,       &kp F5,          &kp F6,            &kp SLCK,            &kp LSHFT,         &kp LCTRL,         &kp LALT,          &kp LGUI,     U_NP,          U_NP, \
 U_NP,         &kp F10,        &kp F1,       &kp F2,          &kp F3,            &kp PAUSE_BREAK,     &u_to_U_FUN,       &u_to_U_MEDIA,     &kp RALT,          U_NP,         U_NP,          U_NP, \
 U_NA,         U_NA,           U_NA,         &kp K_APP,       &kp SPACE,         &kp TAB,             U_NP,              U_NP,              U_NP,              U_NA,         U_NA,          U_NA
-
-#define MIRYOKU_LAYER_MOUSE \
-U_NP,         U_NP,           U_NP,         U_NP,            U_NP,              U_NP,                U_NP,              U_NP,              U_NP,              U_NP,         U_NP,          U_NP, \
-U_NP,         U_BOOT,         &u_to_U_TAP,  &u_to_U_EXTRA,   &u_to_U_BASE,      U_RDO,               U_PST,             U_CPY,             U_CUT,             U_UND,        U_NP,          U_NP, \
-U_NP,         &kp LGUI,       &kp LALT,     &kp LCTRL,       &kp LSHFT,         U_NU,                U_MS_L,            U_MS_D,            U_MS_U,            U_MS_R,       U_NP,          U_NP, \
-U_NP,         U_NA,           &kp RALT,     &u_to_U_SYM,     &u_to_U_MOUSE,     U_NU,                U_WH_L,            U_WH_D,            U_WH_U,            U_WH_R,       U_NP,          U_NP, \
-U_NA,         U_NA,           U_NA,         U_NP,            U_NP,              U_BTN2,              U_BTN1,            U_BTN3,            U_NP,              U_NA,         U_NA,          U_NA
-
-#define MIRYOKU_LAYER_BUTTON \
-U_NP,         U_NP,           U_NP,         U_NP,            U_NP,              U_NP,                U_NP,              U_NP,              U_NP,              U_NP,         U_NP,          U_NP, \
-U_NP,         U_UND,          U_CUT,        U_CPY,           U_PST,             U_RDO,               U_PST,             U_CPY,             U_CUT,             U_UND,        U_NP,          U_NP, \
-U_NP,         &kp LGUI,       &kp LALT,     &kp LCTRL,       &kp LSHFT,         U_NU,                &kp LSHFT,         &kp LCTRL,         &kp LALT,          &kp LGUI,     U_NP,          U_NP, \
-U_NP,         U_UND,          U_CUT,        U_CPY,           U_PST,             U_RDO,               U_PST,             U_CPY,             U_CUT,             U_UND,        U_NP,          U_NP, \
-U_NA,         U_NA,           U_NA,         U_BTN3,          U_BTN1,            U_BTN2,              U_BTN1,            U_BTN3,            U_NP,              U_NA,         U_NA,          U_NA
