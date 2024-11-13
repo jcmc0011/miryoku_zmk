@@ -10,15 +10,11 @@ MIRYOKU_X(SYM,    "Sym") \
 MIRYOKU_X(FUN,    "Fun")
 
 #define U_BASE   0
-#define U_EXTRA  1
-#define U_TAP    2
-#define U_BUTTON 3
-#define U_NAV    4
-#define U_MOUSE  5
-#define U_MEDIA  6
-#define U_NUM    7
-#define U_SYM    8
-#define U_FUN    9
+#define U_NAV    1
+#define U_MEDIA  2
+#define U_NUM    3
+#define U_SYM    4
+#define U_FUN    5
 
 #define XXX &none
 
@@ -40,7 +36,7 @@ K36  K37  N38  N39  K40  K41  XXX       XXX  K42  K43  K44  K45  K46  K47 \
 &kp TAB,        &kp Q,        &kp W,        &kp E,           &kp R,              &kp T,              &kp Y,            &kp U,              &kp I,             &kp O,        &kp P,         &kp GRAVE, \
 &kp LSHIFT,     &kp A,        &kp S,        &kp D,           &kp F,              &kp G,              &kp H,            &kp J,              &kp K,             &kp L,        &kp SEMI,      &kp LSHFT, \
 &kp LCTRL,      &kp Z,        &kp X,        &kp C,           &kp V,              &kp B,              &kp N,            &kp M,              &kp COMMA,         &kp DOT,      &kp SLASH,     &kp LCTRL, \
-U_NA,           U_NA,         U_NA,         U_LT(LGUI, ESC), U_LT(U_NAV, SPACE), U_LT(U_MEDIA, TAB), U_LT(U_SYM, RET), U_LT(U_NUM, SPACE), U_LT(U_FUN, DEL),  U_NA,         U_NA,          U_NA
+U_NA,           U_NA,         U_NA,         U_LT(LGUI, ESC), U_LT(U_NAV, SPACE), U_LT(U_MEDIA, TAB), U_LT(U_SYM, RET), U_LT(U_NUM, SPACE), U_LT(U_FUN, BSPC), U_NA,         U_NA,          U_NA
 
 #define MIRYOKU_LAYER_NAV \
 U_NP,         U_NP,           U_NP,         U_NP,            U_NP,              U_NP,                U_NP,              U_NP,              U_NP,              U_NP,         U_NP,          U_NP, \
