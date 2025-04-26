@@ -36,7 +36,7 @@ K36  K37  N38  N39  K40  K41  XXX       XXX  K42  K43  K44  K45  K46  K47 \
 &kp TAB,        &kp Q,        &kp W,        &kp E,           &kp R,              &kp T,              &kp Y,            &kp U,              &kp I,             &kp O,        &kp P,         &kp MINUS, \
 &kp LSHIFT,     &kp A,        &kp S,        &kp D,           &kp F,              &kp G,              &kp H,            &kp J,              &kp K,             &kp L,        &kp SEMI,      &kp LSHFT, \
 &kp LCTRL,      &kp Z,        &kp X,        &kp C,           &kp V,              &kp B,              &kp N,            &kp M,              &kp COMMA,         &kp DOT,      &kp SLASH,     &kp LCTRL, \
-U_NA,           U_NA,         U_NA,         &kp LGUI,        U_LT(U_NAV, SPACE), U_LT(U_MEDIA, TAB)  U_LT(U_SYM, RET), U_LT(U_NUM, SPACE), BSPC,              U_NA,         U_NA,          U_NA
+U_NA,           U_NA,         U_NA,         &kp LGUI,        U_LT(U_NAV, SPACE), U_LT(U_MEDIA, TAB)  U_LT(U_SYM, RET), U_LT(U_NUM, SPACE), &kp BSPC,          U_NA,         U_NA,          U_NA
 
 #define MIRYOKU_LAYER_NAV \
 U_NP,         U_NP,           U_NP,         U_NP,            U_NP,              U_NP,                U_NP,              U_NP,              U_NP,              U_NP,         U_NP,          U_NP, \
