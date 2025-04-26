@@ -50,7 +50,7 @@ U_NP,         U_NP,           U_NP,         U_NP,            U_NP,              
 U_NP,         U_NP,           U_NP,         U_NP,            U_NP,              U_NP,                U_NP,              U_NP,              U_NP,              U_NP,         U_NP,          U_NP, \
 U_NP,         U_NP,           U_NP,         U_NP,            U_NP,              U_NP,                &kp C_PREV,        &kp C_VOL_DN,      &kp C_VOL_UP,      &kp C_NEXT,   U_NP,          U_NP, \
 U_NP,         U_NA,           U_NP,         U_NP,            U_NP,              U_NP,                &u_bt_sel_0,       &u_bt_sel_1,       &u_bt_sel_2,       &u_bt_sel_3,  U_NP,          U_NP, \
-U_NA,         U_NA,           U_NA,         U_NP,            U_NP,              U_NP,                U_NP,              U_NP,              U_NP,              U_NA,         U_NA,          U_NA
+U_NA,         U_NA,           U_NA,         U_NP,            U_NP,              &kp C_STOP,          &kp C_PP,          &kp C_MUTE,        U_NP,              U_NA,         U_NA,          U_NA
 
 #define MIRYOKU_LAYER_NUM \
 U_NP,         U_NP,           U_NP,         U_NP,            U_NP,              U_NP,                U_NP,              U_NP,              U_NP,              U_NP,         U_NP,          U_NP, \
