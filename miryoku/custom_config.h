@@ -57,7 +57,7 @@ U_NP,         U_NP,           U_NP,         U_NP,            U_NP,              
 U_NP,         &kp LBKT,       &kp N7,       &kp N8,          &kp N9,            &kp RBKT,            U_NP,              U_NP,              U_NP,              U_NP,         U_NP,          U_NP, \
 U_NP,         &kp DQT,        &kp N4,       &kp N5,          &kp N6,            &kp EQUAL,           U_NP,              U_NP,              U_NP,              U_NP,         U_NP,          U_NP, \
 U_NP,         &kp GRAVE,      &kp N1,       &kp N2,          &kp N3,            &kp BSLH,            U_NP,              U_NP,              U_NP,              U_NP,         U_NP,          U_NP, \
-U_NA,         U_NA,           U_NA,         U_NP,            U_NP,              &kp MINUS,           U_NP,              U_NP,              U_NP,              U_NA,         U_NA,          U_NA
+U_NA,         U_NA,           U_NA,         U_NP,            &kp N0,            &kp MINUS,           U_NP,              U_NP,              U_NP,              U_NA,         U_NA,          U_NA
 
 #define MIRYOKU_LAYER_SYM \
 U_NP,         U_NP,           U_NP,         U_NP,            U_NP,              U_NP,                U_NP,              U_NP,              U_NP,              U_NP,         U_NP,          U_NP, \
